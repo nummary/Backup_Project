@@ -53,7 +53,3 @@ def decrypt_file(encrypted_path, output_path, date):
     with open(output_path, 'wb') as f:
         f.write(decrypted_data)
         return output_path
-
-date = datetime.now().strftime('%d-%m-%Y')
-print(encrypt_file("Python File.py"))
-print(decrypt_file("Python File.py.enc", "C:\\Users\\numma\\Python File.py", date))
