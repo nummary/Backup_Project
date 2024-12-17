@@ -111,3 +111,7 @@
 - Перед запуском резервного копирования требуется авторизация в MEGA.
 - Все файлы, загружаемые в MEGA, шифруются с помощью библиотеки `cryptography.fernet` для обеспечения безопасности данных.
 - После загрузки зашифрованных файлов они удаляются с локального диска для освобождения места.
+После установки всех библиотек, необходимо перейти по пути C:\Users\USER\AppData\Local\Programs\Python\PythonXXX\Lib\site-packages\tenacity\_asyncio.py
+Заменить @asyncio.coroutine на async def
+Заменить return do на yield do
+Заменить yield from на yield в двух местах
